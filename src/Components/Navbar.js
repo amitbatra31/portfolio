@@ -8,14 +8,14 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const classString =
-    "bg-white vertical text-2xl tracking-widest font-mono relative sticky shadow-xl primary-navigation ";
+    "bg-white vertical text-2xl tracking-widest font-mono relative fixed shadow-xl primary-navigation w-fit-content ";
 
   return (
     <nav
       data-visible="false"
-      className={!openMenu ? classString + " px-10" : classString + " px-20"}
+      className={!openMenu ? classString + "px-10" : classString + " px-32"}
     >
-      <span className="absolute right-5 top-8 leading-2 ">MY PORTFOLIO</span>
+      <span className="flex-shrink-1 absolute right-5 top-8 leading-2 text-xl">MY PORTFOLIO</span>
       {console.log(openMenu)}
       {/* <i
           className="navToggle "
@@ -24,7 +24,7 @@ export default function Navbar() {
           {!openMenu ? <MenuIcon /> : <CloseIcon />}
         </i> */}
       {!openMenu ? (
-        <div className="flex absolute bottom-20 right-5 inset-7  gap-10 rotate-180">
+        <div className="flex absolute bottom-20 right-5 inset-7 gap-10 rotate-180">
           <i
             className="navToggle "
             onClick={() => (!openMenu ? setOpenMenu(true) : setOpenMenu(false))}
@@ -45,7 +45,7 @@ export default function Navbar() {
           </i>
         </div>
       ) : (
-        <div className="flex absolute bottom-20 right-5 inset-7 gap-6 rotate-180">
+        <div className="flex  absolute bottom-20 right-5 inset-7  rotate-180">
           <i
             className="navToggle justify-self-start "
             onClick={() => (!openMenu ? setOpenMenu(true) : setOpenMenu(false))}
@@ -56,7 +56,7 @@ export default function Navbar() {
             <i>
               <HomeIcon />
             </i>
-            <p className="flex -rotate-90 tracking-wide w-full py-2 items-center text-base">
+            <p className="flex -rotate-90 tracking-wide w-full py-2 items-center text-sm">
               Home
             </p>
           </div>
@@ -65,24 +65,24 @@ export default function Navbar() {
             <i>
               <InfoIcon />
             </i>
-            <p className="flex -rotate-90 tracking-wide w-full items-center text-base">
-              Home
+            <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
+              About me
             </p>
           </div>
           <div className="flex flex-col-reverse items-center">
             <i>
               <WorkIcon />
             </i>
-            <p className="flex -rotate-90 tracking-wide w-full items-center text-base">
-              Home
+            <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
+              Projects
             </p>
           </div>
           <div className="flex flex-col-reverse items-center">
             <i>
               <ContactSupportIcon />
             </i>
-            <p className="flex -rotate-90 tracking-wide w-full items-center text-base">
-              Home
+            <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
+              Contact me
             </p>
           </div>
         </div>

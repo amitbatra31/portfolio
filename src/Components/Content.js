@@ -1,30 +1,30 @@
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Fab, Zoom } from "@mui/material";
+import { Fab} from "@mui/material";
 function Content() {
   return (
-    <div className="flex flex-col lg:mt-30 mx-auto justify-around ">
-      <div className="p-6 md:mt-20 flex flex-col items-start justify-center md:flex-row h-fit gap-10 md:justify-around md:gap-0 w-full">
-        <div className="flex flex-col text-6xl lg:text-7xl font-bold font-mono space-y-10 ">
+    <div className="flex flex-col lg:mt-30 mx-auto  ">
+      <div className="p-6 md:mt-20 flex flex-col gap-5 md:flex-row items-center justify-center md:justify-around md:gap-0 w-full space-y-4 ">
+        <div className="flex flex-col  text-5xl md:text-6xl lg:text-7xl font-['Homemade_Apple'] space-y-10 ">
           <h1 className="pb-3">Hi!</h1>
           <p>I am Amit</p>
         </div>
-        <div className="h-48 w-48 lg:h-60 lg:w-60  ">
+        <div className="w-1/2 md:w-1/5 aspect-square ">
           <img
-            className="object-fit-cover aspect-square rounded-full border-2 border-blue-700 shadow-xl "
+            className=" object-fit-cover rounded-full border-4 border-blue-400 shadow-xl "
             src="images/profile.jpg"
             alt=""
           ></img>
         </div>
       </div>
-      <div className="flex p-4 mt-2 mx-6 items-center relative -top-2 ">
-        <p className="text-2xl font-bold font-mono md:mx-20 text-center">
+      <div className="flex p-4 mx-6 items-center h-full pb-4 md:pb-0">
+        <p className="text-base md:text-2xl font-bold font-mono md:mx-20 text-center">
           I am a Full Stack Developer with a passion for building web
           applications. Currently I am a second year Software Engineering (UG)
           student at DTU
         </p>
       </div>
       <div className="flex mt-2 items-end justify-center relative -top-5 ">
-        <Fab className="h-24 w-24">
+        <Fab className="h-12 w-12 bg-gray-100">
           <ExpandMoreIcon />
         </Fab>
       </div>
