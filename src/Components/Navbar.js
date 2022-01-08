@@ -8,14 +8,17 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const classString =
-    "bg-white vertical text-2xl tracking-widest font-mono relative fixed shadow-xl primary-navigation w-fit-content ";
+    "bg-white vertical text-2xl tracking-widest font-mono relative fixed shadow-xl primary-navigation ";
 
   return (
     <nav
       data-visible="false"
       className={!openMenu ? classString + "px-10" : classString + " px-32"}
     >
-      <span className="flex-shrink-1 absolute right-5 top-8 leading-2 text-xl">MY PORTFOLIO</span>
+      <span className="flex-shrink-1 absolute right-5 top-8 leading-2 text-xl ">
+        MY PORTFOLIO
+      </span>
+
       {console.log(openMenu)}
       {/* <i
           className="navToggle "
