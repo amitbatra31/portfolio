@@ -6,9 +6,7 @@ function Card({ title, description, image, link }) {
       <h1 className="text-xl ">{title}</h1>
       <div className="relative aspect-auto ">
         <img
-          className="w-full  object-contain rounded-lg ${
-            
-          "
+          className="w-full  object-contain rounded-lg"
           src={image}
           alt={title}
         ></img>
