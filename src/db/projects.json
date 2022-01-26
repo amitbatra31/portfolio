@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "title": "Metaverse Chat App",
+        "type": ["Blockchain","all"],
+        "image": "images/metaverse.png",
+        "description": "A web3 chat application built using Moralis, Nextjs and tailwindcss  ",
+        "link": ""
+    },
+    {
+        "id": "2",
+        "title": "Alien Invasion Game ",
+        "type": ["Game","all"],
+        "image": "images/metaverse.png",
+        "description": "A game built using pygame library in python  ",
+        "link": ""
+    },
+    {
+        "id": "3",
+        "title": "Hand Written Digit Recognition",
+        "type": ["Machine Learning","all"],
+        "image": "images/metaverse.png",
+        "description": "Detect hand written digits using CNN model in Tensorflow",
+        "link": ""
+    },
+    {
+        "id": "4",
+        "title": "Top 10 video scraper",
+        "type": ["Backend","all"],
+        "image": "images/metaverse.png",
+        "description": "Scrape top ten youtube videos using selenium and python",
+        "link": ""
+    },
+    {
+        "id": "5",
+        "title": "StudyRoomz",
+        "type": ["Frontend","Backend","all"],
+        "image": "images/metaverse.png",
+        "description": "Chat app using socket.io and nodejs",
+        "link": ""
+    }
+]
