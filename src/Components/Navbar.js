@@ -32,19 +32,19 @@ export default function Navbar() {
             className="navToggle "
             onClick={() => (!openMenu ? setOpenMenu(true) : setOpenMenu(false))}
           >
-            <MenuIcon />
+            <MenuIcon className="cursor-pointer" />
           </i>
           <i>
-            <HomeIcon />
+            <HomeIcon className="cursor-pointer" />
           </i>
           <i>
-            <InfoIcon />
+            <InfoIcon className="cursor-pointer" />
           </i>
           <i>
-            <WorkIcon />
+            <WorkIcon className="cursor-pointer" />
           </i>
           <i>
-            <ContactSupportIcon />
+            <ContactSupportIcon className="cursor-pointer" />
           </i>
         </div>
       ) : (
@@ -53,11 +53,11 @@ export default function Navbar() {
             className="navToggle justify-self-start "
             onClick={() => (!openMenu ? setOpenMenu(true) : setOpenMenu(false))}
           >
-            <CloseIcon />
+            <CloseIcon className="cursor-pointer" />
           </i>
           <div className="flex flex-col-reverse items-center">
             <i>
-              <HomeIcon />
+              <HomeIcon className="cursor-pointer" />
             </i>
             <p className="flex -rotate-90 tracking-wide w-full py-2 items-center text-sm">
               Home
@@ -66,7 +66,7 @@ export default function Navbar() {
 
           <div className="flex flex-col-reverse items-center">
             <i>
-              <InfoIcon />
+              <InfoIcon className="cursor-pointer" />
             </i>
             <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
               About me
@@ -74,7 +74,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col-reverse items-center">
             <i>
-              <WorkIcon />
+              <WorkIcon className="cursor-pointer" />
             </i>
             <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
               Projects
@@ -82,7 +82,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col-reverse items-center">
             <i>
-              <ContactSupportIcon />
+              <ContactSupportIcon className="cursor-pointer" />
             </i>
             <p className="flex -rotate-90 tracking-wide w-full items-center text-sm">
               Contact me
